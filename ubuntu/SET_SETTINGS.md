@@ -1,27 +1,23 @@
 # Settings to configure Ubuntu
-1. [ set shortcut for opening nautilus window ](#openNautiShort)
-2. [ legend ](#legend)
+[TOC]
 
-<a name="openNautiShort"></a>
 ## set shortcut for opening nautilus window
-Ubuntu Version: 
+**Ubuntu Version**:
 
-Where:
-```
-System Settings -> Keyboard -> Shortcuts -> Custom shortcut
-```
+``` Ubuntu 18.04.4 LTS ```
 
-command
-```bash
-nautilus -w
-```
+**Where**:
 
-short cut:
-```
-Super(Windows) + E
-```
+``` System Settings -> Keyboard -> Shortcuts -> Custom shortcut ```
 
-<a name="legend"></a>
+**command**:
+
+```bash nautilus -w ```
+
+**short cut**:
+
+``` Super(Windows) + E ```
+
 # Legend
-Nautilus =  file system explorer of ubuntu
-Super = Windows Key
+- Nautilus =  file system explorer of ubuntu
+- Super = Windows Key
