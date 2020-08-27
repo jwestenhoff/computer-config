@@ -4,25 +4,33 @@
 ## set shortcut for opening nautilus window
 **Ubuntu Version**:
 
-``` Ubuntu 18.04.4 LTS ```
+```
+Ubuntu 18.04.4 LTS
+```
 
 **Where**:
 
-``` System Settings -> Keyboard -> Shortcuts -> Custom shortcut ```
+```
+System Settings -> Keyboard -> Shortcuts -> Custom shortcut
+```
 
 **command**:
 
-```bash nautilus -w ```
+```
+bash nautilus -w
+```
 
 **short cut**:
 
-``` Super(Windows) + E ```
+```
+Super(Windows) + E
+```
 
 ## add git information to bash prompt
 
-**open** \~/.bashrc
+**open** ```~/.bashrc```
 
-**replace** a part of .bashrc
+**replace** a part of ```.bashrc```
 
 **part before:**
 ```
@@ -60,7 +68,9 @@ export EDITOR="$VISUAL"
 If this is not configured for dual boot linux linux and windows have time differences and the time is not shown correctly.
 This will provide that the linux system uses the local time which is set/updated by windows.
 
-``` timedatectl set-local-rtc 1 --adjust-system-clock ```
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
 
 
 # Legend
