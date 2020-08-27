@@ -56,6 +56,12 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 ```
 
+## make linux listen to windows time (dual boot)
+If this is not configured for dual boot linux linux and windows have time differences and the time is not shown correctly.
+This will provide that the linux system uses the local time which is set/updated by windows.
+
+``` timedatectl set-local-rtc 1 --adjust-system-clock ```
+
 
 # Legend
 - Nautilus =  file system explorer of ubuntu
