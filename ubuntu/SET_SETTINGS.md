@@ -36,6 +36,19 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ssh-keygen
 ```
 
+## git
+**install and configure git**
+```bash
+sudo apt install git -y &&
+git config --global user.name "Jonas Westenhoff" &&
+git config --global user.email "jwestenhoff@web.de"
+```
+
+**view git config**
+```bash
+git config --list
+```
+
 
 # Changes in .bashrc
 ## add git information to bash prompt
