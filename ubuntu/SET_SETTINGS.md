@@ -2,12 +2,6 @@
 [TOC]
 
 ## set shortcut for opening nautilus window
-**Ubuntu Version**:
-
-```
-Ubuntu 18.04.4 LTS
-```
-
 **Where**:
 
 ```
