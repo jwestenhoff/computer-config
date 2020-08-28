@@ -34,7 +34,6 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 
 # Changes in .bashrc
 ## add git information to bash prompt
-
 **open** ```~/.bashrc```
 
 **replace** a part of ```.bashrc```
@@ -47,7 +46,6 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 ```
-
 
 **part after:**
 ```
@@ -62,7 +60,6 @@ fi
 ```
 
 ## configure vim as default editor for bash
-
 **open** ```~/.bashrc```
 
 **add the following lines:**
