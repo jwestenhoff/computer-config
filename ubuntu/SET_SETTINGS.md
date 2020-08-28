@@ -20,6 +20,17 @@ bash nautilus -w
 Super(Windows) + E
 ```
 
+
+## make linux listen to windows time (dual boot)
+If this is not configured for dual boot linux linux and windows have time differences and the time is not shown correctly.
+This will provide that the linux system uses the local time which is set/updated by windows.
+
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+
+# Changes in .bashrc
 ## add git information to bash prompt
 
 **open** ```~/.bashrc```
@@ -50,20 +61,12 @@ fi
 
 ## configure vim as default editor for bash
 
-**open** \~/.bashrc
+**open** ```~/.bashrc```
 
 **add the following lines:**
 ```
 export VISUAL=vim
 export EDITOR="$VISUAL"
-```
-
-## make linux listen to windows time (dual boot)
-If this is not configured for dual boot linux linux and windows have time differences and the time is not shown correctly.
-This will provide that the linux system uses the local time which is set/updated by windows.
-
-```
-timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 
