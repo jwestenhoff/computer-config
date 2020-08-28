@@ -70,6 +70,13 @@ export EDITOR="$VISUAL"
 ```
 
 
+# Default commands
+## command to update software
+```
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean
+```
+
+
 # Legend
 - Nautilus =  file system explorer of ubuntu
 - Super = Windows Key
