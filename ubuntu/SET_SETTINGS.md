@@ -3,19 +3,16 @@
 
 ## set shortcut for opening nautilus window
 **Where**:
-
 ```
 System Settings -> Keyboard -> Shortcuts -> Custom shortcut
 ```
 
 **command**:
-
 ```
 bash nautilus -w
 ```
 
-**short cut**:
-
+**shortcut**:
 ```
 Super(Windows) + E
 ```
@@ -26,7 +23,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ```
 
 ## make linux listen to windows time (dual boot)
-If this is not configured for dual boot linux linux and windows have time differences and the time is not shown correctly.
+If this is not configured for a dual boot, linux and windows have time differences.
+Windows os shows wrong time.
 This will provide that the linux system uses the local time which is set/updated by windows.
 
 ```
