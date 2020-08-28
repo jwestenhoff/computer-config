@@ -1,0 +1,14 @@
+/bin/
+/build/
+/.classpath
+/.idea/
+/.project
+/.settings/
+/target/
+/out/
+
+*.class
+*.iml
+
+.DS_Store
+.DS_Store?
