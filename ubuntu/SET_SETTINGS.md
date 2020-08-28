@@ -20,6 +20,10 @@ bash nautilus -w
 Super(Windows) + E
 ```
 
+## activate minimize to doc
+```
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+```
 
 ## make linux listen to windows time (dual boot)
 If this is not configured for dual boot linux linux and windows have time differences and the time is not shown correctly.
