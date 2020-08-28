@@ -31,6 +31,11 @@ This will provide that the linux system uses the local time which is set/updated
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
+## create ssh key
+```bash
+ssh-keygen
+```
+
 
 # Changes in .bashrc
 ## add git information to bash prompt
