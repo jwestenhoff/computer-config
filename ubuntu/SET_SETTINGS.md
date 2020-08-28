@@ -8,7 +8,7 @@ System Settings -> Keyboard -> Shortcuts -> Custom shortcut
 ```
 
 **command**:
-```
+```bash
 bash nautilus -w
 ```
 
@@ -18,7 +18,7 @@ Super(Windows) + E
 ```
 
 ## activate minimize to doc
-```
+```bash
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ```
 
@@ -27,7 +27,7 @@ If this is not configured for a dual boot, linux and windows have time differenc
 Windows os shows wrong time.
 This will provide that the linux system uses the local time which is set/updated by windows.
 
-```
+```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
@@ -39,7 +39,7 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 **replace** a part of ```.bashrc```
 
 **part before:**
-```
+```bash
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
@@ -48,7 +48,7 @@ fi
 ```
 
 **part after:**
-```
+```bash
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
@@ -63,7 +63,7 @@ fi
 **open** ```~/.bashrc```
 
 **add the following lines:**
-```
+```bash
 export VISUAL=vim
 export EDITOR="$VISUAL"
 ```
@@ -71,10 +71,12 @@ export EDITOR="$VISUAL"
 
 # Default commands
 ## command to update software
+```bash
+sudo apt update &&
+sudo apt upgrade -y &&
+sudo apt autoremove -y &&
+sudo apt autoclean
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean
-```
-
 
 # Legend
 - Nautilus =  file system explorer of ubuntu
