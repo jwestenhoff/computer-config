@@ -9,7 +9,7 @@ System Settings -> Keyboard -> Shortcuts -> Custom shortcut
 
 **command**:
 ```bash
-bash nautilus -w
+nautilus -w
 ```
 
 **shortcut**:
