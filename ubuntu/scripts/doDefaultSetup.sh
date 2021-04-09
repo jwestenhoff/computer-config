@@ -58,3 +58,13 @@ if [ "$INTERNET" = true ]; then
   echo "### AUTOREMOVE UNNECESSARY PACKAGES"
   sudo apt autoremove -y
 fi
+
+# todo add installations of several programs
+# todo set nightlight
+# todo set nautilus shortcut
+# todo git conf
+# todo ssh key?
+# todo fit .bashrc?
+# todo set taskbar elements?
+# todo set bluetooth on not default (only laptop?)
+# todo set default applications (e.g. vlc as default for music)
