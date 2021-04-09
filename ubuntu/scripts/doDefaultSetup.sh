@@ -29,8 +29,8 @@ do
     esac
 done
 
-echo "# Internet: $INTERNET"
-echo "# Is laptop: $IS_LAPTOP"
-echo "# Is dual boot: $IS_DUAL_BOOT"
-echo "# Other arguments: ${OTHER_ARGUMENTS[*]}"
+echo "# internet: $INTERNET"
+echo "# is laptop: $IS_LAPTOP"
+echo "# is dual boot: $IS_DUAL_BOOT"
+echo "# other arguments: ${OTHER_ARGUMENTS[*]}"
 
