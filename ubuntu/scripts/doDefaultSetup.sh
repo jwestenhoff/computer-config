@@ -44,3 +44,8 @@ if [ "$IS_DUAL_BOOT" = true ]; then
   timedatectl set-local-rtc 1 --adjust-system-clock
   echo "## linux listens to windows time"
 fi
+
+
+echo "# autoremove unnecessary packages"
+sudo apt autoremove -y
+echo "# unnecessary packages are removed"
