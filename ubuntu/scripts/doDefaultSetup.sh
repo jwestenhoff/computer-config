@@ -12,19 +12,19 @@ do
     case $arg in
         -ni|--no-internet)
         INTERNET=false
-        shift # Remove --initialize from processing
+        shift # Remove argument from processing
         ;;
         -l|--laptop)
         IS_LAPTOP=true
-        shift # Remove --initialize from processing
+        shift # Remove argument from processing
         ;;  
         -db|--dual-boot)
         IS_DUAL_BOOT=true
-        shift # Remove --initialize from processing
+        shift # Remove argument from processing
         ;;      
         *)
         OTHER_ARGUMENTS+=("$1")
-        shift # Remove generic argument from processing
+        shift # Remove argument from processing
         ;;
     esac
 done
