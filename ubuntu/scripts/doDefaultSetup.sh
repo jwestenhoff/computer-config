@@ -34,3 +34,7 @@ echo "# is laptop: $IS_LAPTOP"
 echo "# is dual boot: $IS_DUAL_BOOT"
 echo "# other arguments: ${OTHER_ARGUMENTS[*]}"
 
+
+echo "## activate minimize to dock"
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+echo "## minimize to dock activated"
