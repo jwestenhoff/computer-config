@@ -34,19 +34,14 @@ echo " - is dual boot: $IS_DUAL_BOOT"
 echo " - other arguments: ${OTHER_ARGUMENTS[*]}"
 echo ""
 
+bash ./topic_related/generalSettings.sh # set general settings
+
 if [ "$INTERNET" = true ]; then
   bash ./topic_related/internetNeeded.sh
 fi
 
-echo "### COMMON SETTINGS ###"
-echo " - activate minimize to dock"
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-echo ""
-
 if [ "$IS_DUAL_BOOT" = true ]; then
-  echo "### DUAL BOOT SETTINGS ###"
-  echo " - make linux listen to windows time"
-  timedatectl set-local-rtc 1 --adjust-system-clock
+  bash ./topic_related/dualBootSettings.sh
 fi
 
 # todo add installations of several programs
