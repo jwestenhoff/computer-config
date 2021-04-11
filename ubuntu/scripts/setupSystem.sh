@@ -52,15 +52,6 @@ if [ "$IS_DUAL_BOOT" = true ]; then
   timedatectl set-local-rtc 1 --adjust-system-clock
 fi
 
-if [ "$INTERNET" = true ]; then
-  echo "### UPDATE AND UPGRADE INSTALLED PACKAGES"
-  sudo apt update
-  sudo apt upgrade -y
-  echo ""
-  echo "### AUTOREMOVE UNNECESSARY PACKAGES"
-  sudo apt autoremove -y
-fi
-
 # todo add installations of several programs
 # todo set nightlight
 # todo set nautilus shortcut
