@@ -35,10 +35,7 @@ echo " - other arguments: ${OTHER_ARGUMENTS[*]}"
 echo ""
 
 if [ "$INTERNET" = true ]; then
-  echo "### UPDATE AND UPGRADE INSTALLED PACKAGES"
-  sudo apt update
-  sudo apt upgrade -y
-  echo ""
+  bash ./topic_related/internetNeeded.sh
 fi
 
 echo "### COMMON SETTINGS ###"
