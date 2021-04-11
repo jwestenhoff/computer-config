@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Default values of arguments
 INTERNET=true
 IS_LAPTOP=false
