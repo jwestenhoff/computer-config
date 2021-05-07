@@ -1,6 +1,8 @@
 # purpose:  installs brave
 # source:   https://brave.com/linux/
 
+echo "### INSTALL BRAVE BROWSER ###"
+
 sudo apt install apt-transport-https curl -y
 
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
