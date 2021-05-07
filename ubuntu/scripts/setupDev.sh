@@ -7,4 +7,4 @@ echo "### INSTALL VIM ###"
 sudo apt install vim -y
 
 echo "### INSTALL VSCode ###"
-sudo snap install --classic code    # VSCode
+sudo snap install --classic code
