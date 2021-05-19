@@ -40,8 +40,8 @@ ssh-keygen
 **install and configure git**
 ```bash
 sudo apt install git -y &&
-git config --global user.name "Jonas Westenhoff" &&
-git config --global user.email "jwestenhoff@web.de"
+git config --global user.name "Name" &&
+git config --global user.email "e-mail"
 ```
 
 **view git config**
