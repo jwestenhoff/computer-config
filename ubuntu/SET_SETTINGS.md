@@ -1,6 +1,14 @@
 # Settings to configure Ubuntu
 [TOC]
 
+## turn off Bluetooth by default in Ubuntu
+Bluetooth is enabled by default (on Laptop) and is active after every boot.
+
+**command**:
+```bash
+sudo systemctl disable bluetooth.service
+```
+
 ## set shortcut for opening nautilus window
 **Where**:
 ```
