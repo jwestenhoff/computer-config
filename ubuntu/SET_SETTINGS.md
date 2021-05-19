@@ -1,6 +1,14 @@
 # Settings to configure Ubuntu
 [TOC]
 
+## turn off Bluetooth by default in Ubuntu
+Bluetooth is enabled by default (on Laptop) and is active after every boot.
+
+**command**:
+```bash
+sudo systemctl disable bluetooth.service
+```
+
 ## set shortcut for opening nautilus window
 **Where**:
 ```
@@ -40,8 +48,8 @@ ssh-keygen
 **install and configure git**
 ```bash
 sudo apt install git -y &&
-git config --global user.name "Jonas Westenhoff" &&
-git config --global user.email "jwestenhoff@web.de"
+git config --global user.name "Name" &&
+git config --global user.email "e-mail"
 ```
 
 **view git config**
