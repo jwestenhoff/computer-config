@@ -18,7 +18,7 @@ sudo snap install telegram-desktop
 echo "### INSTALL DISCORD ###"
 sudo snap install discord
 
-for fileName in ./default/install*.sh; do
-    chmod +x "$fileName"
-	./"$fileName"
+for filePath in ./default/install*.sh; do
+    chmod +x "$filePath" # make file executable
+	"$filePath" # execute file
 done
