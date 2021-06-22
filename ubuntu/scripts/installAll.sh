@@ -1,4 +1,11 @@
+pathOfThisFile="./installAll.sh"
+
 echo "### INSTALL ALL ###"
-./installDefaultSetup.sh
-./installDevSetup.sh
-./installMiKTeX.sh
+
+for filePath in ./install*.sh; do
+    if [ $filePath != $pathOfThisFile ]
+    then
+        chmod +x "$filePath" # make file executable
+	    "$filePath" # execute file
+    fi
+done
