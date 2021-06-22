@@ -12,12 +12,6 @@ sudo dpkg-reconfigure libdvd-pkg
 echo "### ACTIVATE MINIMIZE TO DOCK ###"
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
-echo "### INSTALL TELEGRAM DESKTOP ###"
-sudo snap install telegram-desktop
-
-echo "### INSTALL DISCORD ###"
-sudo snap install discord
-
 for filePath in ./default/install*.sh; do
     chmod +x "$filePath" # make file executable
 	"$filePath" # execute file
