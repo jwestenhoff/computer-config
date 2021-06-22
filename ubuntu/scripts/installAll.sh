@@ -1,3 +1,5 @@
+#!/bin/bash
+
 pathOfThisFile="./installAll.sh"
 pathOfPrivateSetupFile="./installPrivateSetup.sh"
 nonePrivate = false

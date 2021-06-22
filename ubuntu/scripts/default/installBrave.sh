@@ -1,3 +1,4 @@
+#!/bin/bash
 # purpose:  installs brave
 # source:   https://brave.com/linux/
 

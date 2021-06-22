@@ -1,3 +1,4 @@
+#!/bin/bash
 # purpose:  installs spotify
 # source:   https://www.spotify.com/us/download/linux/
 

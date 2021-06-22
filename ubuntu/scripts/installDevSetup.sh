@@ -1,4 +1,4 @@
-# add bin bash line
+#!/bin/bash
 
 echo "### INSTALL VIM ###"
 sudo apt install vim -y

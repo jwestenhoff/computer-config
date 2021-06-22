@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo ""
 echo "Register gpg key"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889

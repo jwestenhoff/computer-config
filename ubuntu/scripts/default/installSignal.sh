@@ -1,3 +1,4 @@
+#!/bin/bash
 # purpose:  installs signal
 # source:   https://itsfoss.com/install-signal-ubuntu/
 
