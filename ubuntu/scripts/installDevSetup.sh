@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir ~/Projects
+
 echo "### INSTALL VIM ###"
 sudo apt install vim -y
 
