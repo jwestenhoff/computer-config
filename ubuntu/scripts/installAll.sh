@@ -1,12 +1,15 @@
 #!/bin/bash
 
+# imports
+. "./printHeading.sh" # import print heading function
+
 pathOfThisFile="./installAll.sh"
 pathOfPrivateSetupFile="./installPrivateSetup.sh"
 nonePrivate=false
 
 OTHER_ARGUMENTS=()
 
-echo "# read and process arguments..."
+printf "\nRead and process arguments..."
 for arg in "$@"; do
   case $arg in
   -np | --none-private)
@@ -21,7 +24,7 @@ for arg in "$@"; do
 done
 echo ""
 
-echo "### INSTALL ALL ###"
+printHeading "trigger installing scripts"
 echo " - none-private: $nonePrivate"
 echo " - other arguments: ${OTHER_ARGUMENTS[*]}"
 echo ""

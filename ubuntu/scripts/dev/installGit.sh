@@ -1,9 +1,12 @@
 #!/bin/bash
 
-echo "\n### INSTALL GIT ###"
+# imports
+. "../printHeading.sh" # import print heading function
+
+printInstallHeading "git"
 sudo apt install git -y # add hint to add global config (mail and user name)
 
-echo "### CREATE SSH-KEY ###"
+printHeading "create ssh-key"
 echo "Hello User\nPlease insert an e-mail for your ssh-key for git:"
 read eMail
 echo "Inserted e-mail: $eMail"

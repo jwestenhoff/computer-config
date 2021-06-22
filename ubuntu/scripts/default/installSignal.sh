@@ -1,6 +1,10 @@
 #!/bin/bash
 
-echo "### INSTALL SIGNAL ###" # source: https://itsfoss.com/install-signal-ubuntu/
+# imports
+. "../printHeading.sh" # import print heading function
+
+
+printInstallHeading "signal desktop" # source: https://itsfoss.com/install-signal-ubuntu/
 
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
 

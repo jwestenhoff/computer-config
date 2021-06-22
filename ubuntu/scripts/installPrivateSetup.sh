@@ -1,7 +1,10 @@
 #!/bin/bash
 
-echo "### INSTALL TELEGRAM DESKTOP ###"
+# imports
+. "./printHeading.sh" # import print heading function
+
+printInstallHeading "telegram desktop"
 sudo snap install telegram-desktop
 
-echo "### INSTALL DISCORD ###"
+printInstallHeading "discord"
 sudo snap install discord

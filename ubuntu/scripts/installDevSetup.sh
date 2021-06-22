@@ -1,12 +1,15 @@
 #!/bin/bash
 
+# imports
+. "./printHeading.sh" # import print heading function
+
 mkdir ~/Projects
 
-echo "### INSTALL VIM ###"
+printHeading "install vim"
 sudo apt install vim -y
 printf "\nexport VISUAL=vim\nexport EDITOR=\"$VISUAL\"\n" >> "$HOME/.bashrc" # configure vim as default editor vor command line
 
-echo "### INSTALL VSCode ###"
+printHeading "install vscode"
 sudo snap install --classic code
 
 for filePath in ./dev/install*.sh; do

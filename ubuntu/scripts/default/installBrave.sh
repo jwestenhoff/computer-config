@@ -1,6 +1,10 @@
 #!/bin/bash
 
-echo "### INSTALL BRAVE BROWSER ###" # source: https://brave.com/linux/
+# imports
+. "../printHeading.sh" # import print heading function
+
+
+printInstallHeading "brave browser" # source: https://brave.com/linux/
 
 sudo apt install apt-transport-https curl -y
 
