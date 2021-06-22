@@ -2,7 +2,7 @@
 
 pathOfThisFile="./installAll.sh"
 pathOfPrivateSetupFile="./installPrivateSetup.sh"
-nonePrivate = false
+nonePrivate=false
 
 OTHER_ARGUMENTS=()
 
