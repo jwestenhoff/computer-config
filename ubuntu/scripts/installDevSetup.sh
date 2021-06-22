@@ -4,6 +4,7 @@ mkdir ~/Projects
 
 echo "### INSTALL VIM ###"
 sudo apt install vim -y
+printf "\nexport VISUAL=vim\nexport EDITOR=\"$VISUAL\"\n" >> "$HOME/.bashrc" # configure vim as default editor vor command line
 
 echo "### INSTALL VSCode ###"
 sudo snap install --classic code
