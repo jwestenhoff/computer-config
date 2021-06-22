@@ -1,8 +1,6 @@
 #!/bin/bash
-# purpose:  installs brave
-# source:   https://brave.com/linux/
 
-echo "### INSTALL BRAVE BROWSER ###"
+echo "### INSTALL BRAVE BROWSER ###" # source: https://brave.com/linux/
 
 sudo apt install apt-transport-https curl -y
 

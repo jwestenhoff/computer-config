@@ -1,8 +1,6 @@
 #!/bin/bash
-# purpose:  installs signal
-# source:   https://itsfoss.com/install-signal-ubuntu/
 
-echo "### INSTALL SIGNAL ###"
+echo "### INSTALL SIGNAL ###" # source: https://itsfoss.com/install-signal-ubuntu/
 
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
 
