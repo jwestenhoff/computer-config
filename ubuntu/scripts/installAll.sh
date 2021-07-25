@@ -35,10 +35,9 @@ echo ""
 
 for filePath in ./install*.sh; do
     notPrivateSetupAndIsPrivateSetupFile=(nonePrivate && $filePath == $pathOfPrivateSetupFile)
-
     if [ $filePath != $pathOfThisFile && !(notPrivateSetupAndIsPrivateSetupFile) ]
     then
-        chmod +x "$filePath" # make file executable
+      chmod +x "$filePath" # make file executable
 	    "$filePath" # execute file
     fi
 done
