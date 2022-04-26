@@ -1,0 +1,96 @@
+name: execute dependent on file location
+
+on: push
+
+env:
+  ubuntu_scripts_directory: "./linux/ubuntu-scripts"
+
+jobs:
+  check:
+    name: Check files
+    outputs:
+      run_dev_setup: ${{ steps.check_files.outputs.run_dev_setup }}
+      run_default_setup: ${{ steps.check_files.outputs.run_default_setup }}
+      run_private_setup: ${{ steps.check_files.outputs.run_private_setup }}
+      run_complete_setup: ${{ steps.check_files.outputs.run_complete_setup}}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Check modified files
+        id: check_files
+        run: |
+          scriptPath="./.github/workflows/determineNecessaryJobs.sh"
+          chmod +x ${scriptPath}
+          ${scriptPath}
+
+  dev_setup:
+    name: Dev setup
+    needs: check
+    if: needs.check.outputs.run_dev_setup == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Install dev setup
+        run: |
+          scriptPath="${{ env.ubuntu_scripts_directory }}/installDevSetup.sh"
+          chmod +x ${scriptPath}
+          ${scriptPath}
+
+  default_setup:
+    name: Default setup
+    needs: check
+    if: needs.check.outputs.run_default_setup == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Install default setup
+        run: |
+          scriptPath="${{ env.ubuntu_scripts_directory }}/installDefaultSetup.sh"
+          chmod +x ${scriptPath}
+          ${scriptPath}
+
+  private_setup:
+    name: Private setup
+    needs: check
+    if: needs.check.outputs.run_private_setup == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Install private setup
+        run: |
+          scriptPath="${{ env.ubuntu_scripts_directory }}/installPrivateSetup.sh"
+          chmod +x ${scriptPath}
+          ${scriptPath}
+
+  run_complete_setup:
+    name: Complete setup
+    needs: check
+    if: needs.check.outputs.run_complete_setup == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Install complete setup
+        run: |
+          scriptPath="${{ env.ubuntu_scripts_directory }}/installAll.sh"
+          chmod +x ${scriptPath}
+          ${scriptPath}
