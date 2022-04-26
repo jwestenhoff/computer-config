@@ -51,12 +51,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 2
+          ref: ${{ github.ref }}
 
       - name: Install default setup
         run: |
           ls -l
           ls -l linux
-          ls -l linux/ubuntu-scripts
+          ls -l "linux/ubuntu-scripts"
           scriptPath="${{ env.ubuntu_scripts_directory }}/installDefaultSetup.sh"
           chmod +x ${scriptPath}
           ${scriptPath}
