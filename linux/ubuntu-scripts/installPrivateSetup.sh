@@ -11,8 +11,8 @@ executePrivateInstallScripts() {
 
 echo "# INSTALLING PRIVATE SETUP ..."
 
-executePrivateInstallScripts
-status=$?
+status=executePrivateInstallScripts
+# status=$?
 
 echo "... FINISHED INSTALLATION OF PRIVATE SETUP #"
 
