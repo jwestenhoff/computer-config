@@ -50,13 +50,7 @@ jobs:
           fetch-depth: 2
 
       - name: Install default setup
-        run: |
-          ls -l
-          ls -l linux
-          ls -l "linux/ubuntu-scripts"
-          scriptPath="${{ env.ubuntu_scripts_directory }}/installDefaultSetup.sh"
-          chmod +x ${scriptPath}
-          ${scriptPath}
+        run: "${{ env.ubuntu_scripts_directory }}/installDefaultSetup.sh"
 
   private_setup:
     name: Private setup
@@ -70,10 +64,7 @@ jobs:
           fetch-depth: 2
 
       - name: Install private setup
-        run: |
-          scriptPath="${{ env.ubuntu_scripts_directory }}/installPrivateSetup.sh"
-          chmod +x ${scriptPath}
-          ${scriptPath}
+        run: "${{ env.ubuntu_scripts_directory }}/installPrivateSetup.sh"
 
   run_complete_setup:
     name: Complete setup
@@ -87,7 +78,4 @@ jobs:
           fetch-depth: 2
 
       - name: Install complete setup
-        run: |
-          scriptPath="${{ env.ubuntu_scripts_directory }}/installAll.sh"
-          chmod +x ${scriptPath}
-          ${scriptPath}
+        run: "${{ env.ubuntu_scripts_directory }}/installAll.sh"
