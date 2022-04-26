@@ -5,14 +5,12 @@ executePrivateInstallScripts() {
         chmod +x "$filePath" # make file executable
         "$filePath"          # execute file
     done
-
-    echo $?
 }
 
 echo "# INSTALLING PRIVATE SETUP ..."
 
-status=executePrivateInstallScripts
-# status=$?
+executePrivateInstallScripts
+status=$?
 
 echo "... FINISHED INSTALLATION OF PRIVATE SETUP #"
 
