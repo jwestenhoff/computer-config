@@ -13,7 +13,7 @@ setSetupStatusForFolderWhenSomethingInsideHasChanged() {
   for folder in "${!remainingFoldersToCheck[@]}"; do
     echo "$file - isRelevantFolder: ${$file == */${folder}/* || $file == ${folder}/*}"
 
-    if [[ $file == */${folder}/* || $file == ${folder}/* || $file == */ubuntu-scripts/install${folder^}Setup.sh]]; then
+    if [[ $file == */${folder}/* || $file == ${folder}/* || $file == */ubuntu-scripts/install${folder^}Setup.sh ]]; then
       setupsWithJobStatus[${folder}]=true
       unset remainingFoldersToCheck[${folder}]
       break
