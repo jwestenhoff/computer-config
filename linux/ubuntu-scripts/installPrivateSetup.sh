@@ -10,8 +10,8 @@ executePrivateInstallScripts() {
 echo "# INSTALLING PRIVATE SETUP ..."
 
 executePrivateInstallScripts
-exitStatus = $?
+status=$?
 
 echo "... FINISHED INSTALLATION OF PRIVATE SETUP #"
 
-exitStatus
+exit status
