@@ -11,10 +11,7 @@ triggerAllJobs() {
 
 setSetupStatusForFolderWhenSomethingInsideHasChanged() {
   for folder in "${!remainingFoldersToCheck[@]}"; do
-    echo ${file}
-
     if [[ $file == */${folder}/* || $file == ${folder}/* || $file == */ubuntu-scripts/install${folder^}Setup.sh ]]; then
-      echo ${file}
       setupsWithJobStatus[${folder}]=true
       unset remainingFoldersToCheck[${folder}]
       break

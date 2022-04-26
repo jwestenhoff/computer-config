@@ -5,6 +5,8 @@ executePrivateInstallScripts() {
         chmod +x "$filePath" # make file executable
         "$filePath"          # execute file
     done
+
+    echo $?
 }
 
 echo "# INSTALLING PRIVATE SETUP ..."
