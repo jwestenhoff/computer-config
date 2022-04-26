@@ -3,7 +3,7 @@ name: execute dependent on file location
 on: push
 
 env:
-  ubuntu_scripts_directory: "./linux/ubuntu-scripts"
+  ubuntu_scripts_directory: "linux/ubuntu-scripts"
 
 jobs:
   check:
@@ -54,6 +54,8 @@ jobs:
 
       - name: Install default setup
         run: |
+          pwd
+          ll
           scriptPath="${{ env.ubuntu_scripts_directory }}/installDefaultSetup.sh"
           chmod +x ${scriptPath}
           ${scriptPath}
