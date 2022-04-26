@@ -11,6 +11,8 @@ triggerAllJobs() {
 
 setSetupStatusForFolderWhenSomethingInsideHasChanged() {
   for folder in "${!remainingFoldersToCheck[@]}"; do
+    echo "$file - isRelevantFolder: ${$file == */${folder}/* || $file == ${folder}/*}"
+
     if [[ $file == */${folder}/* || $file == ${folder}/* ]]; then
       setupsWithJobStatus[${folder}]=true
       unset remainingFoldersToCheck[${folder}]
