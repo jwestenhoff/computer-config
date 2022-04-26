@@ -36,10 +36,7 @@ jobs:
           fetch-depth: 2
 
       - name: Install dev setup
-        run: |
-          scriptPath="${{ env.ubuntu_scripts_directory }}/installDevSetup.sh"
-          chmod +x ${scriptPath}
-          ${scriptPath}
+        run: "${{ env.ubuntu_scripts_directory }}/installDevSetup.sh"
 
   default_setup:
     name: Default setup
@@ -51,7 +48,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 2
-          ref: ${{ github.ref }}
 
       - name: Install default setup
         run: |
