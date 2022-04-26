@@ -3,7 +3,7 @@ name: execute dependent on file location
 on: push
 
 env:
-  ubuntu_scripts_directory: "linux/ubuntu-scripts"
+  ubuntu_scripts_directory: linux/ubuntu-scripts
 
 jobs:
   check:
@@ -36,7 +36,7 @@ jobs:
           fetch-depth: 2
 
       - name: Install dev setup
-        run: "${{ env.ubuntu_scripts_directory }}/installDevSetup.sh"
+        run: ${{ env.ubuntu_scripts_directory }}/installDevSetup.sh
 
   default_setup:
     name: Default setup
@@ -50,7 +50,7 @@ jobs:
           fetch-depth: 2
 
       - name: Install default setup
-        run: "${{ env.ubuntu_scripts_directory }}/installDefaultSetup.sh"
+        run: ${{ env.ubuntu_scripts_directory }}/installDefaultSetup.sh
 
   private_setup:
     name: Private setup
@@ -64,7 +64,7 @@ jobs:
           fetch-depth: 2
 
       - name: Install private setup
-        run: "${{ env.ubuntu_scripts_directory }}/installPrivateSetup.sh"
+        run: ${{ env.ubuntu_scripts_directory }}/installPrivateSetup.sh
 
   run_complete_setup:
     name: Complete setup
@@ -78,4 +78,4 @@ jobs:
           fetch-depth: 2
 
       - name: Install complete setup
-        run: "${{ env.ubuntu_scripts_directory }}/installAll.sh"
+        run: ${{ env.ubuntu_scripts_directory }}/installAll.sh
