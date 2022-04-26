@@ -22,10 +22,7 @@ jobs:
 
       - name: Check modified files
         id: check_files
-        run: |
-          scriptPath="./.github/workflows/determineNecessaryJobs.sh"
-          chmod +x ${scriptPath}
-          ${scriptPath}
+        run: .github/workflows/determineNecessaryJobs.sh
 
   dev_setup:
     name: Dev setup
