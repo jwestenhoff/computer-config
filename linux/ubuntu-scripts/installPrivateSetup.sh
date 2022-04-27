@@ -1,7 +1,9 @@
 #!/bin/bash
 
+ubuntuScriptsPath="./linux/ubuntu"
+
 executePrivateInstallScripts() {
-    for filePath in ./private/install*.sh; do
+    for filePath in ${ubuntuScriptsPath}/private/install*.sh; do
         chmod +x "$filePath" # make file executable
         "$filePath"          # execute file
     done
