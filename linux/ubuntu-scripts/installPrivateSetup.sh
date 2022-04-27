@@ -11,6 +11,7 @@ executePrivateInstallScripts() {
 
 echo "# INSTALLING PRIVATE SETUP ..."
 
+pwd
 executePrivateInstallScripts
 status=$?
 
