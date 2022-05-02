@@ -12,7 +12,7 @@ echo "# INSTALLING ${myFolder^^} SETUP ..."
 
 if [[ $status == 0 ]]; then
     executeSnapInstalls "${snapPackages[@]}"
-    status=127
+    status=$?
 fi
 
 if [[ $status == 0 ]]; then
