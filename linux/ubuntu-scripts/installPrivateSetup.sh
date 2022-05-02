@@ -4,17 +4,26 @@ ubuntuScriptPath=$1
 myFolder=private
 snapPackages=("discord" "telegram-desktop" "slack --classic")
 aptPackages=()
+status=0
 
 source ${ubuntuScriptPath}/utilFunctions.sh
 
 echo "# INSTALLING ${myFolder^^} SETUP ..."
 
-executeSnapInstalls "${snapPackages[@]}"
+if [[ status=0 ]]; then
+    executeSnapInstalls "${snapPackages[@]}"
+    status=$?
+fi
 
-executeAptInstalls "${aptPackages[@]}"
+if [[ status=0 ]]; then
+    executeAptInstalls "${aptPackages[@]}"
+    status=$?
+fi
 
-executeInstallScriptsInFolder ${ubuntuScriptPath}/$myFolder
-status=$?
+if [[ status=0 ]]; then
+    executeInstallScriptsInFolder ${ubuntuScriptPath}/$myFolder
+    status=$?
+fi
 
 echo "... FINISHED INSTALLATION OF ${myFolder^^} SETUP #"
 
