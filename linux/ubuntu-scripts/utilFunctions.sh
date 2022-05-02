@@ -12,7 +12,7 @@ export -f executeInstallScriptsInFolder
 executeSnapInstalls() {
     snapPackages=("$@")
 
-    for package in snapPackages; do
+    for package in "${snapPackages[@]}"; do
         echo "### INSTALLING ${package^^} ..."
         sudo snap install $package
         echo "... FINISHED INSTALLATION OF ${package^^} ###"
