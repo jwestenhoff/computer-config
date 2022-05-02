@@ -1,14 +1,15 @@
 #!/bin/bash
 
+ubuntuScriptPath=$1
+
 echo "# INSTALLING DEV SETUP ..."
 
 # create default folder for projects
 mkdir ~/Projects
 
-# execute dev install scripts
-for filePath in ./dev/install*.sh; do
-    chmod +x "$filePath" # make file executable
-    "$filePath"          # execute file
-done
+${ubuntuScriptPath}/executeInstallScriptsInFolder.sh ${ubuntuScriptPath}/dev
+status=$?
 
 echo "... FINISHED INSTALLATION OF DEV SETUP #"
+
+exit $status
