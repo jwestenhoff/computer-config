@@ -7,6 +7,6 @@ pathOfThisFile="${ubuntuScriptPath}/installAll.sh"
 for filePath in ${ubuntuScriptPath}/install*.sh; do
   if [[ $filePath != $pathOfThisFile ]]; then
     chmod +x "$filePath"
-    "$filePath"
+    "$filePath" ${ubuntuScriptPath}
   fi
 done
