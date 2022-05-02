@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ubuntuScriptsPath="./linux/ubuntu"
+ubuntuScriptsPath="./linux/ubuntu-scripts"
 
 executePrivateInstallScripts() {
     for filePath in ${ubuntuScriptsPath}/private/install*.sh; do
@@ -11,7 +11,6 @@ executePrivateInstallScripts() {
 
 echo "# INSTALLING PRIVATE SETUP ..."
 
-pwd
 executePrivateInstallScripts
 status=$?
 
