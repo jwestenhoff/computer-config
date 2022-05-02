@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# ubuntuScriptsPath="./linux/ubuntu-scripts"
-ubuntuScriptsPath=$1
-echo $ubuntuScriptsPath
+ubuntuScriptPath=$1
 
 executePrivateInstallScripts() {
-    for filePath in ${ubuntuScriptsPath}/private/install*.sh; do
+    for filePath in ${ubuntuScriptPath}/private/install*.sh; do
         chmod +x "$filePath" # make file executable
         "$filePath"          # execute file
     done
@@ -13,7 +11,7 @@ executePrivateInstallScripts() {
 
 echo "# INSTALLING PRIVATE SETUP ..."
 
-./executeInstallScriptsInFolder.sh ${ubuntuScriptsPath}/private
+./executeInstallScriptsInFolder.sh ${ubuntuScriptPath}/private
 status=$?
 
 echo "... FINISHED INSTALLATION OF PRIVATE SETUP #"
