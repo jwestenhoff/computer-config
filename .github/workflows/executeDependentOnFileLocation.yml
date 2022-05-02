@@ -64,7 +64,7 @@ jobs:
           fetch-depth: 2
 
       - name: Install private setup
-        run: ${{ env.ubuntu_scripts_directory }}/installPrivateSetup.sh
+        run: ${{ env.ubuntu_scripts_directory }}/installPrivateSetup.sh ${{ env.ubuntu_scripts_directory }}
 
   run_complete_setup:
     name: Complete setup

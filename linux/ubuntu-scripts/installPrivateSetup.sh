@@ -1,6 +1,8 @@
 #!/bin/bash
 
-ubuntuScriptsPath="./linux/ubuntu-scripts"
+# ubuntuScriptsPath="./linux/ubuntu-scripts"
+ubuntuScriptsPath=$1
+echo $ubuntuScriptsPath
 
 executePrivateInstallScripts() {
     for filePath in ${ubuntuScriptsPath}/private/install*.sh; do
