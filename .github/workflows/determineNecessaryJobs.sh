@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# TODO: search through all commits since last push/job run
+
 ### METHODS
 triggerAllJobs() {
   for folder in "${!setupsWithJobStatus[@]}"; do
