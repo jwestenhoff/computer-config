@@ -9,6 +9,17 @@ executeInstallScriptsInFolder() {
 }
 export -f executeInstallScriptsInFolder
 
+executeAptInstalls() {
+    aptPackages=("$@")
+
+    for package in "${aptPackages[@]}"; do
+        echo "### INSTALLING ${package^^} ..."
+        sudo apt install $package
+        echo "... FINISHED INSTALLATION OF ${package^^} ###"
+    done
+}
+export -f executeAptInstalls
+
 executeSnapInstalls() {
     snapPackages=("$@")
 
