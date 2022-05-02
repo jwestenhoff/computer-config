@@ -8,3 +8,11 @@ executeInstallScriptsInFolder() {
     done
 }
 export -f executeInstallScriptsInFolder
+
+executeSnapInstalls() {
+    package=$1
+    echo "### INSTALLING ${package^^} ..."
+    sudo snap install $package
+    echo "... FINISHED INSTALLATION OF ${package^^} ###"
+}
+export -f executeSnapInstalls

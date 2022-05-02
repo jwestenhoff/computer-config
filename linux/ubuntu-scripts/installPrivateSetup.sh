@@ -7,6 +7,8 @@ source ${ubuntuScriptPath}/utilFunctions.sh
 
 echo "# INSTALLING ${myFolder^^} SETUP ..."
 
+executeSnapInstalls discord
+
 executeInstallScriptsInFolder ${ubuntuScriptPath}/$myFolder
 status=$?
 
