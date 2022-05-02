@@ -14,7 +14,7 @@ executeAptInstalls() {
 
     for package in "${aptPackages[@]}"; do
         echo "### INSTALLING ${package^^} ..."
-        sudo apt install $package
+        sudo apt install $package -y
         echo "... FINISHED INSTALLATION OF ${package^^} ###"
     done
 }
