@@ -1,8 +1,10 @@
 #!/bin/bash
 
-pathOfThisFile="./installAll.sh"
+ubuntuScriptPath=$1
 
-for filePath in ./install*.sh; do
+pathOfThisFile="${ubuntuScriptPath}/installAll.sh"
+
+for filePath in ${ubuntuScriptPath}/install*.sh; do
   if [[ $filePath != $pathOfThisFile ]]; then
     chmod +x "$filePath"
     "$filePath"
