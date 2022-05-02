@@ -10,17 +10,17 @@ source ${ubuntuScriptPath}/utilFunctions.sh
 
 echo "# INSTALLING ${myFolder^^} SETUP ..."
 
-if [[ status == 0 ]]; then
+if [[ $status == 0 ]]; then
     executeSnapInstalls "${snapPackages[@]}"
     status=127
 fi
 
-if [[ status == 0 ]]; then
+if [[ $status == 0 ]]; then
     executeAptInstalls "${aptPackages[@]}"
     status=$?
 fi
 
-if [[ status == 0 ]]; then
+if [[ $status == 0 ]]; then
     executeInstallScriptsInFolder ${ubuntuScriptPath}/$myFolder
     status=$?
 fi
