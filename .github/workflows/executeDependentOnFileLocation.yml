@@ -36,7 +36,7 @@ jobs:
           fetch-depth: 2
 
       - name: Install dev setup
-        run: ${{ env.ubuntu_scripts_directory }}/installDevSetup.sh
+        run: ${{ env.ubuntu_scripts_directory }}/installDevSetup.sh ${{ env.ubuntu_scripts_directory }}
 
   default_setup:
     name: Default setup
@@ -50,7 +50,7 @@ jobs:
           fetch-depth: 2
 
       - name: Install default setup
-        run: ${{ env.ubuntu_scripts_directory }}/installDefaultSetup.sh
+        run: ${{ env.ubuntu_scripts_directory }}/installDefaultSetup.sh ${{ env.ubuntu_scripts_directory }}
 
   private_setup:
     name: Private setup
@@ -78,4 +78,4 @@ jobs:
           fetch-depth: 2
 
       - name: Install complete setup
-        run: ${{ env.ubuntu_scripts_directory }}/installAll.sh
+        run: ${{ env.ubuntu_scripts_directory }}/installAll.sh  ${{ env.ubuntu_scripts_directory }}
