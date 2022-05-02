@@ -6,6 +6,7 @@ source ${ubuntuScriptPath}/executeInstallScriptsInFolder.sh
 
 echo "# INSTALLING PRIVATE SETUP ..."
 
+# TODO: fix call of method
 executeInstallScriptsInFolder ${ubuntuScriptPath}/private
 status=$?
 
