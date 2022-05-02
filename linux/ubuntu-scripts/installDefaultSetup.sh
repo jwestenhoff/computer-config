@@ -13,7 +13,7 @@ echo "# INSTALLING ${myFolder^^} SETUP ..."
 sudo apt update
 sudo apt upgrade -y
 
-if [[ $status == 0 ]]; then
+if [[ $status == 0 ]]; then # TODO: find solution - doesn't work for github action
     # activate minimize to dock
     gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
     status=$?
