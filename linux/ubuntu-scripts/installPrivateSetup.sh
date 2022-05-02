@@ -2,9 +2,11 @@
 
 ubuntuScriptPath=$1
 
+source ${ubuntuScriptPath}/executeInstallScriptsInFolder.sh
+
 echo "# INSTALLING PRIVATE SETUP ..."
 
-${ubuntuScriptPath}/executeInstallScriptsInFolder.sh ${ubuntuScriptPath}/private
+executeInstallScriptsInFolder ${ubuntuScriptPath}/private
 status=$?
 
 echo "... FINISHED INSTALLATION OF PRIVATE SETUP #"
