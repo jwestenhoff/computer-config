@@ -1,15 +1,18 @@
 #!/bin/bash
 
 ubuntuScriptPath=$1
+myFolder=private
 
-echo "# INSTALLING DEV SETUP ..."
+source ${ubuntuScriptPath}/utilFunctions.sh
+
+echo "# INSTALLING ${myFolder^^} SETUP ..."
 
 # create default folder for projects
 mkdir ~/Projects
 
-${ubuntuScriptPath}/executeInstallScriptsInFolder.sh ${ubuntuScriptPath}/dev
+executeInstallScriptsInFolder ${ubuntuScriptPath}/$myFolder
 status=$?
 
-echo "... FINISHED INSTALLATION OF DEV SETUP #"
+echo "... FINISHED INSTALLATION OF ${myFolder^^} SETUP #"
 
 exit $status

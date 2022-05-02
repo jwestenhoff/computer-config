@@ -1,15 +1,15 @@
 #!/bin/bash
 
 ubuntuScriptPath=$1
+myFolder=private
 
-source ${ubuntuScriptPath}/executeInstallScriptsInFolder.sh
+source ${ubuntuScriptPath}/utilFunctions.sh
 
-echo "# INSTALLING PRIVATE SETUP ..."
+echo "# INSTALLING ${myFolder^^} SETUP ..."
 
-# TODO: fix call of method
-executeInstallScriptsInFolder ${ubuntuScriptPath}/private
+executeInstallScriptsInFolder ${ubuntuScriptPath}/$myFolder
 status=$?
 
-echo "... FINISHED INSTALLATION OF PRIVATE SETUP #"
+echo "... FINISHED INSTALLATION OF ${myFolder^^} SETUP #"
 
 exit $status

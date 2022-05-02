@@ -1,8 +1,11 @@
 #!/bin/bash
 
 ubuntuScriptPath=$1
+myFolder=default
 
-echo "# INSTALLING DEFAULT SETUP ..."
+source ${ubuntuScriptPath}/utilFunctions.sh
+
+echo "# INSTALLING ${myFolder^^} SETUP ..."
 
 sudo apt update
 sudo apt upgrade -y
@@ -10,9 +13,9 @@ sudo apt upgrade -y
 # activate minimize to dock
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
-${ubuntuScriptPath}/executeInstallScriptsInFolder.sh ${ubuntuScriptPath}/default
+executeInstallScriptsInFolder ${ubuntuScriptPath}/$myFolder
 status=$?
 
-echo "... FINISHED INSTALLATION OF DEFAULT SETUP #"
+echo "... FINISHED INSTALLATION OF ${myFolder^^} SETUP #"
 
 exit $status
