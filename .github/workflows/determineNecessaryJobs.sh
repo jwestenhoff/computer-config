@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # TODO: search through all commits since last push/job run
+# TODO: react to changes to installAll script
 
 ### METHODS
 triggerAllJobs() {
