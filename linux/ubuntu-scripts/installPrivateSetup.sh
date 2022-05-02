@@ -11,7 +11,7 @@ executePrivateInstallScripts() {
 
 echo "# INSTALLING PRIVATE SETUP ..."
 
-./executeInstallScriptsInFolder.sh ${ubuntuScriptPath}/private
+${ubuntuScriptPath}/executeInstallScriptsInFolder.sh ${ubuntuScriptPath}/private
 status=$?
 
 echo "... FINISHED INSTALLATION OF PRIVATE SETUP #"
