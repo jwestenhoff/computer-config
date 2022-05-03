@@ -10,8 +10,15 @@ source ${ubuntuScriptPath}/utilFunctions.sh
 
 echo "# INSTALLING ${myFolder^^} SETUP ..."
 
-sudo apt update
-sudo apt upgrade -y
+if [[ $status == 0 ]]; then
+    sudo apt update
+    status=$?
+fi
+
+if [[ $status == 0 ]]; then
+    sudo apt upgrade -y
+    status=$?
+fi
 
 # activate minimize to dock
 # (jenkins has no user interface -> always exit != 0 -> status not tracked)
