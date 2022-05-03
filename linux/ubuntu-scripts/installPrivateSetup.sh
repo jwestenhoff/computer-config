@@ -2,7 +2,7 @@
 
 ubuntuScriptPath=$1
 myFolder=private
-snapPackages=("discord" "telegram-desktop" "slack --classic")
+snapPackages=("discord" "telegram-desktop" "slack")
 aptPackages=()
 status=0
 
