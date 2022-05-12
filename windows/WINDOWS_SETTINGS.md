@@ -1,4 +1,8 @@
+<!-- omit in toc -->
 # Helpful Windows Settings
+
+- [Use ssh-Agent for PKs](#use-ssh-agent-for-pks)
+- [Add Git Bash to "Terminal" of Windows](#add-git-bash-to-terminal-of-windows)
 
 ## Use ssh-Agent for PKs
 

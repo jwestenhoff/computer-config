@@ -1,5 +1,9 @@
+<!-- omit in toc -->
 # Fixes 
-[TOC]
+- [avoid report popup because of detected problems](#avoid-report-popup-because-of-detected-problems)
+- [fix miktex error during "sudo apt update"](#fix-miktex-error-during-sudo-apt-update)
+  - [Error:](#error)
+  - [Fix:](#fix)
 
 ## avoid report popup because of detected problems
 view detected problems:

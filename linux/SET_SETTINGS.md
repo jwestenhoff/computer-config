@@ -1,5 +1,11 @@
+<!-- omit in toc -->
 # Settings to configure Ubuntu
-[TOC]
+- [Changes in .bashrc](#changes-in-bashrc)
+  - [add git information to bash prompt](#add-git-information-to-bash-prompt)
+  - [configure vim as default editor for bash](#configure-vim-as-default-editor-for-bash)
+- [Default commands](#default-commands)
+  - [command to update software](#command-to-update-software)
+- [Legend](#legend)
 
 ## turn off Bluetooth by default in Ubuntu
 Bluetooth is enabled by default (on Laptop) and is active after every boot.
