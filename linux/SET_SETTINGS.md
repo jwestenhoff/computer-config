@@ -11,9 +11,8 @@ sudo systemctl disable bluetooth.service
 
 ## set shortcut for opening nautilus window
 **Where**:
-```
-System Settings -> Keyboard -> Shortcuts -> Custom shortcut
-```
+
+``System Settings`` &#8594; ``Keyboard`` &#8594; ``Shortcuts`` &#8594; ``Custom shortcut``
 
 **command**:
 ```bash
