@@ -71,11 +71,8 @@ sudo apt install amd64-microcode -y &&
 sudo apt install intel-microcode -y &&
 sudo apt install tlp -y &&
 sudo apt install tlp-rdw -y &&
-sudo apt install ubuntu-restricted-extras -y &&
-sudo apt install ubuntu-restricted-addons -y &&
 sudo apt install synaptic -y &&
 sudo apt install okular -y &&
-sudo apt install libdvd-pkg -y
 ```
 
 
