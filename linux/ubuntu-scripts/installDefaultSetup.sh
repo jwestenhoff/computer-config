@@ -3,7 +3,7 @@
 ubuntuScriptPath=$1
 myFolder=default
 snapPackages=("brave" "spotify" "libreoffice")
-aptPackages=("vlc")
+aptPackages=("vlc" "curl")
 status=0
 
 source ${ubuntuScriptPath}/utilFunctions.sh
