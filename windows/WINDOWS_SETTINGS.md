@@ -1,10 +1,10 @@
 <!-- omit in toc -->
 # Helpful Windows Settings
 
-- [Use ssh-Agent for PKs](#use-ssh-agent-for-pks)
-- [Add Git Bash to "Terminal" of Windows](#add-git-bash-to-terminal-of-windows)
+- [[SSH] Use ssh-Agent for PKs](#ssh-use-ssh-agent-for-pks)
+- [[TERMINAL] Add Git Bash to "Terminal" of Windows](#terminal-add-git-bash-to-terminal-of-windows)
 
-## Use ssh-Agent for PKs
+## [SSH] Use ssh-Agent for PKs
 
 This is useful if you have a ssh-key with a password.
 
@@ -17,7 +17,7 @@ eval `ssh-agent.exe`
 ssh-add ~/.ssh/id_rsa
 ```
 
-## Add Git Bash to "Terminal" of Windows
+## [TERMINAL] Add Git Bash to "Terminal" of Windows
 
 1. Install [Git Bash](https://gitforwindows.org/)
 2. Open Terminal
