@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ubuntuScriptPath=$1
-myFolder=private
+myFolder=dev
 snapPackages=("code --classic")
 aptPackages=("nodejs" "npm" "git")
 status=0
