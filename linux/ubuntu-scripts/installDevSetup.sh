@@ -2,7 +2,7 @@
 
 ubuntuScriptPath=$1
 myFolder=private
-snapPackages=()
+snapPackages=("code --classic")
 aptPackages=(nodejs npm)
 status=0
 
