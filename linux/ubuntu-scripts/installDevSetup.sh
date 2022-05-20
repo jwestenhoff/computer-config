@@ -3,7 +3,7 @@
 ubuntuScriptPath=$1
 myFolder=private
 snapPackages=("code --classic")
-aptPackages=(nodejs npm)
+aptPackages=("nodejs" "npm" "git")
 status=0
 
 source ${ubuntuScriptPath}/utilFunctions.sh
