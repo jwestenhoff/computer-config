@@ -1,8 +1,9 @@
 <!-- omit in toc -->
 # Fixes 
-- [[APT] update errors](#apt-update-errors)
+- [[APT] Update errors](#apt-update-errors)
+- [[DUAL BOOT] Windows still in Grub Boot Loader](#dual-boot-windows-still-in-grub-boot-loader)
+- [[MIKTEX] Error during "sudo apt update"](#miktex-error-during-sudo-apt-update)
 - [[REPORTS] Avoid report popup because of detected problems](#reports-avoid-report-popup-because-of-detected-problems)
-- [Miktex error during "sudo apt update"](#miktex-error-during-sudo-apt-update)
 
 
 ## [APT] Update errors
