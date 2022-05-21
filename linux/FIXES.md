@@ -4,7 +4,7 @@
 - [[DUAL BOOT] Windows still in Grub Boot Loader](#dual-boot-windows-still-in-grub-boot-loader)
 - [[MIKTEX] Error during "sudo apt update"](#miktex-error-during-sudo-apt-update)
 - [[REPORTS] Avoid report popup because of detected problems](#reports-avoid-report-popup-because-of-detected-problems)
-
+- [[SSH] [GIT] Error during use of ssh key](#ssh-git-error-during-use-of-ssh-key)
 
 ## [APT] Update errors
 All additional apt settings are stored under following path:
@@ -55,7 +55,7 @@ remove detected problems to avoid report popup:
 sudo rm /var/crash/*
 ```
 
-## [SSH] [GIT]
+## [SSH] [GIT] Error during use of ssh key
 If you try to e.g. clone a git repository with your ssh key and the following message appears keep calm.
 If the ssh key that you use has been copied from another device it may has the wrong permissions which cause this error to ocurr.
 
