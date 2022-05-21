@@ -54,3 +54,32 @@ remove detected problems to avoid report popup:
 ```bash
 sudo rm /var/crash/*
 ```
+
+## [SSH] [GIT]
+If you try to e.g. clone a git repository with your ssh key and the following message appears keep calm.
+If the ssh key that you use has been copied from another device it may has the wrong permissions which cause this error to ocurr.
+
+Error message in commandline:
+```bash
+Cloning into 'my-repo'...
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for '/home/user/.ssh/id_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/user/.ssh/id_rsa": bad permissions
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+The solution is to fit the access rights. This can be done with the following command:
+```bash
+chmod 600 /path/to/file
+```
+
+For more detailed information on the command have a look at the following article:
+[Chmod Command in Linux (File Permissions)](https://linuxize.com/post/chmod-command-in-linux/)
